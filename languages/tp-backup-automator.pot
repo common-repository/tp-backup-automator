@@ -1,0 +1,376 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-08-07 00:28+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: tp-backup-automator.php:84
+#, php-format
+msgid ""
+"<a href=\"%s\" class=\"button button-primary\">Setup a backup email</a> "
+"Almost done! Backup & Restore your WordPress data and keep it safe."
+msgstr ""
+
+#: tp-backup-automator.php:88
+#, php-format
+msgid ""
+"<strong>TP Backup Automator:</strong> Email and product key are invalid. <a "
+"href=\"%s\">Fix now</a>"
+msgstr ""
+
+#. Name of the plugin
+#: tp-backup-automator.php:118 templates/plugin-page.php:19
+msgid "TP Backup Automator"
+msgstr ""
+
+#: tp-backup-automator.php:118
+msgid "Backup Automator"
+msgstr ""
+
+#: tp-backup-automator.php:177 includes/class-tpba-ajax.php:226
+msgid "Please, enter a valid email."
+msgstr ""
+
+#: tp-backup-automator.php:178
+msgid "Please, enter a valid product key."
+msgstr ""
+
+#: tp-backup-automator.php:179
+msgid "Connecting..."
+msgstr ""
+
+#: tp-backup-automator.php:180
+msgid "Cannot prepare files."
+msgstr ""
+
+#: tp-backup-automator.php:181
+msgid "All done"
+msgstr ""
+
+#: tp-backup-automator.php:182
+msgid "Warning"
+msgstr ""
+
+#: tp-backup-automator.php:183
+msgid "files have backed up successfully."
+msgstr ""
+
+#: tp-backup-automator.php:184
+msgid "files have restored successfully."
+msgstr ""
+
+#: tp-backup-automator.php:185
+msgid "Are you sure you want to create a backup now?"
+msgstr ""
+
+#: tp-backup-automator.php:186
+msgid "All your current data will be changed, are you sure?"
+msgstr ""
+
+#: tp-backup-automator.php:228 tp-backup-automator.php:228
+msgid "Settings"
+msgstr ""
+
+#: includes/class-tpba-ajax.php:113
+msgid "Error when backup"
+msgstr ""
+
+#: includes/class-tpba-ajax.php:203
+msgid "Error when restore a file"
+msgstr ""
+
+#: includes/class-tpba-ajax.php:222 includes/class-tpba-ajax.php:266
+msgid "Sorry, your security key did not verify."
+msgstr ""
+
+#: includes/class-tpba-ajax.php:270
+msgid "Your product key can not be empty."
+msgstr ""
+
+#: includes/class-tpba-ajax.php:276
+msgid "Email is not validate."
+msgstr ""
+
+#: includes/class-tpba-cron.php:15 includes/class-tpba-cron.php:22
+msgid "Prepare files..."
+msgstr ""
+
+#: includes/class-tpba-cron.php:72 includes/class-tpba-cron.php:171
+msgid "Almost done, please wait..."
+msgstr ""
+
+#: includes/class-tpba-cron.php:76
+msgid "Data backup is not avaiable."
+msgstr ""
+
+#: includes/class-tpba-cron.php:94
+#, php-format
+msgid "%s was %s"
+msgstr ""
+
+#: includes/class-tpba-cron.php:98
+msgid "File is not exist"
+msgstr ""
+
+#: includes/class-tpba-cron.php:106
+#, php-format
+msgid "%s not found."
+msgstr ""
+
+#: includes/class-tpba-cron.php:174
+msgid "Data to backup is not avaiable."
+msgstr ""
+
+#: includes/class-tpba-cron.php:196
+#, php-format
+msgid "%s was not saved. "
+msgstr ""
+
+#: includes/class-tpba-cron.php:199
+#, php-format
+msgid "Prepare %s was done. "
+msgstr ""
+
+#: includes/class-tpba-cron.php:283
+msgid "You have created a backup successfully."
+msgstr ""
+
+#: includes/class-tpba-cron.php:286
+msgid "Opps, this backup has not been done. All data will be rolled back."
+msgstr ""
+
+#: includes/class-tpba-cron.php:303
+msgid "Done! Your data has been restored successfully."
+msgstr ""
+
+#: includes/class-tpba-cron.php:306
+msgid ""
+"Opps, the restoration process cannot be completed now. Dont worry! Your data "
+"won't be affected."
+msgstr ""
+
+#: includes/class-tpba-services.php:76 includes/class-tpba-services.php:248
+#: includes/class-tpba-services.php:399
+msgid "Response to service is too long, pls try again."
+msgstr ""
+
+#: includes/class-tpba-services.php:81 includes/class-tpba-services.php:253
+#: includes/class-tpba-services.php:410 includes/class-tpba-user.php:72
+#: includes/class-tpba-user.php:112
+msgid "Cannot connect to service."
+msgstr ""
+
+#: includes/class-tpba-services.php:86 includes/class-tpba-services.php:414
+#: includes/class-tpba-user.php:76 includes/class-tpba-user.php:116
+msgid "Error from service."
+msgstr ""
+
+#: includes/class-tpba-services.php:116
+msgid "Connected."
+msgstr ""
+
+#: includes/class-tpba-services.php:121
+msgid "Nothing changed now to backup"
+msgstr ""
+
+#: includes/class-tpba-services.php:189
+#, php-format
+msgid "%s has error from service."
+msgstr ""
+
+#: includes/class-tpba-services.php:199 includes/class-tpba-services.php:319
+#, php-format
+msgid "%s is response too long."
+msgstr ""
+
+#: includes/class-tpba-services.php:204 includes/class-tpba-services.php:324
+msgid "Cannot create connect to service"
+msgstr ""
+
+#: includes/class-tpba-services.php:265
+msgid "Connected"
+msgstr ""
+
+#: includes/class-tpba-services.php:406
+msgid "Email and product key are invalid."
+msgstr ""
+
+#: templates/backups.php:21
+msgid "WP Files"
+msgstr ""
+
+#: templates/backups.php:24
+msgid "Sql tables"
+msgstr ""
+
+#: templates/backups.php:27
+msgid "All changes"
+msgstr ""
+
+#: templates/backups.php:30
+msgid "Status"
+msgstr ""
+
+#: templates/backups.php:33
+msgid "Datetime"
+msgstr ""
+
+#: templates/backups.php:70
+msgid "Done"
+msgstr ""
+
+#: templates/backups.php:74
+msgid "Error"
+msgstr ""
+
+#: templates/backups.php:83
+msgid "ago"
+msgstr ""
+
+#: templates/backups.php:97
+msgid "You have no backup list to display."
+msgstr ""
+
+#: templates/dashboard.php:20
+msgid "Re-validate email"
+msgstr ""
+
+#: templates/dashboard.php:31
+msgid "Recent activities"
+msgstr ""
+
+#: templates/dashboard.php:37
+msgid "Create a backup Now"
+msgstr ""
+
+#: templates/dashboard.php:77
+#, php-format
+msgid "You have created a backup with %d changed files about %s ago."
+msgstr ""
+
+#: templates/dashboard.php:80
+#, php-format
+msgid "You have some error with a backup with %d changed files about %s ago."
+msgstr ""
+
+#: templates/dashboard.php:87
+#, php-format
+msgid "You are restoring data with %d files, begin from %s ago."
+msgstr ""
+
+#: templates/dashboard.php:89
+#, php-format
+msgid "You have restored all data with %d files about %s ago."
+msgstr ""
+
+#: templates/dashboard.php:103
+msgid "You have no activity to display."
+msgstr ""
+
+#: templates/install.php:24
+msgid "TP Backup Automator Installer"
+msgstr ""
+
+#. Description of the plugin
+#: templates/install.php:25
+msgid "Backup & Restore your WordPress data and keep it safe."
+msgstr ""
+
+#: templates/install.php:27 templates/plugin-page.php:35
+msgid "Live chat support"
+msgstr ""
+
+#: templates/install.php:38
+msgid "Get a product key via email"
+msgstr ""
+
+#: templates/install.php:41
+msgid "Validate product key from the email"
+msgstr ""
+
+#: templates/install.php:44
+msgid "Your product key is activated"
+msgstr ""
+
+#: templates/install.php:52
+msgid "Get a free key"
+msgstr ""
+
+#: templates/install.php:54
+msgid "If you have a product key?"
+msgstr ""
+
+#: templates/install.php:54
+msgid "Active now"
+msgstr ""
+
+#: templates/install.php:59
+msgid "Enter product key"
+msgstr ""
+
+#: templates/install.php:61
+msgid "Validate key"
+msgstr ""
+
+#: templates/install.php:64
+msgid "Do you received a product key from email?"
+msgstr ""
+
+#: templates/install.php:64
+msgid "Back to resend email"
+msgstr ""
+
+#: templates/install.php:78
+msgid "Your product key is activated."
+msgstr ""
+
+#: templates/install.php:79
+msgid "Activation failed because your product key is not available."
+msgstr ""
+
+#: templates/install.php:80
+#, php-format
+msgid "Start using in %s seconds or <a href=\"#\">Using now</a>"
+msgstr ""
+
+#: templates/plugin-page.php:3
+msgid "Dashboard"
+msgstr ""
+
+#: templates/plugin-page.php:4
+msgid "Backup list"
+msgstr ""
+
+#: templates/plugin-page.php:59
+msgid "Processed"
+msgstr ""
+
+#: templates/plugin-page.php:59
+msgid "files"
+msgstr ""
+
+#: templates/plugin-page.php:60
+msgid "Your progress"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://wordpress.org/plugins/tp-backup-automator/"
+msgstr ""
+
+#. Author of the plugin
+msgid "ThemesPond"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://themespond.com/"
+msgstr ""

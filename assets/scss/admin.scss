@@ -1,0 +1,359 @@
+
+$primary_color:#333;
+
+@import 'spiner';
+@import 'installer';
+
+.tpba-tabs{
+    border-radius: 5px;
+    background-color: #FFF;
+    -webkit-box-shadow: 0 2px 0 #EAEAEA;
+    box-shadow: 0 2px 0 #EAEAEA;
+    overflow: hidden;
+    margin: 0 0 30px;
+    border: 1px solid #eee;
+}
+.align-right{
+    text-align: right;
+}
+.align-left{
+    text-align: left;
+}
+.tpba_panel{
+    padding: 30px;
+
+    table{
+        &{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th{
+            text-align: left;
+            font-size: 18px;
+        }
+        td{
+            border-top: 1px solid #eee;
+        }
+        th,td{
+            padding: 15px 10px;
+        }
+        tr.current{
+            background-color: #fffae8;
+        }
+    }
+}
+.tpba-tabs{
+    nav{
+        &{
+            border-bottom: 1px solid #ddd;
+            background: linear-gradient(top,#fff,#f5f5f5);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f5f5f5', GradientType=1 );
+            position: relative;
+        }
+        ul{
+            &{
+                padding: 0;
+                margin: 0;
+            }
+            li{
+                &{
+                    list-style: none;
+                    float: left;
+                    margin-bottom:0;
+                    border-right: 1px solid #e9e9e9;
+                }
+                a{
+                    display: block;
+                    padding: 15px 40px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: inherit;
+                    font-weight: bold;
+                    box-shadow: none;
+                    position: relative;
+                    text-shadow: 0px 1px 1px #fff;
+                    transition: .2s;
+                }
+                &.active{
+                    a{
+                        &{
+                            background-color: #fff;
+                        }
+                        &:after{
+                            height: 1px;
+                            background-color: #fff;
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            bottom: -1px;
+                            left: 0;
+                            right: 0;
+                        }
+                    }
+                }
+                &:hover{
+                    a{
+                        background: linear-gradient(top,#f5f5f5,#fff);
+                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#fff', GradientType=1 );
+                    }
+                }
+            }
+            &:after{
+                display: table;
+                clear: both;
+                content: '';
+            }
+        }
+        .btn-help{
+            &{
+                position: absolute;
+                top: 10px;
+                bottom:10px;
+                right: 0;
+                width: 60px;
+                box-shadow: none;
+                text-decoration: none;
+                text-align: center;
+                color: $primary_color;
+                border-left:1px solid rgba(0,0,0,.07);
+                padding-top: 0px;
+                transition: .2s;
+                font-size: 16px;
+            }
+            i{
+                border: 2px solid $primary_color;
+                border-radius: 100%;
+                width: 22px;
+                height: 22px;
+                font-size:15px;
+                &:before{
+                    top:5px;
+                    position: relative;
+                }
+            }
+            &:hover{
+                opacity: .8;
+            }
+        }
+    }
+}
+
+
+
+@keyframes animate-stripes {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 60px 0;
+    }
+}
+@-webkit-keyframes animate-stripes {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 60px 0;
+    }
+}
+
+.tpba_progress{
+    &{
+        opacity: 1;
+        transition: .3s;
+    }
+    &.show{
+        opacity: 1;
+    }
+    .progress_logs{
+        padding-left: 6px;
+        margin-bottom: 15px;
+        &__track{
+            color: #bbb;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        &__message {
+            font-size: 20px;
+            color: #5dadff;
+            font-weight: bold;
+            &.msg-error{
+                color: #f67c7c;
+            }
+        }
+    }
+
+    /* All good till now. Now we'll style the background */
+    .progress {
+        width: 100%;
+        height: 20px;
+        border-radius: 20px;
+        display: block;
+        background: #9bcafa;
+        padding: 0px;
+        box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.2);
+        margin: 0px 0px 20px 0px;
+        overflow: hidden;
+    }
+
+    /* Now the value part */
+    .progress-bar {
+        width: 0%;
+        height: 20px;
+        border-radius: 20px;
+        text-align: right;
+        box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.4);
+        -webkit-transition-property: width;
+        -webkit-transition-duration: 1s;
+        transition-property: width;
+        transition-duration: 1s;
+        box-sizing: border-box;
+        background-color: #0068d3;
+        background-size: 30px 30px;
+        background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+        animation: animate-stripes 4s linear infinite;
+    }
+    .progress-percent{
+        color: #fff;
+        font-size: 12px;
+        font-weight: bold;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+
+.tpba_alert{
+
+    background-color: #D1F1EA;
+    border-radius: 2px;
+    color: #333333;
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    padding: 15px 30px;
+    letter-spacing: -0.015em;
+    font-weight: 500;
+
+    &--notice,
+    &--warning{
+        background-color: #FFF5D5;
+        border: none;
+        line-height: 30px;
+        font-size: 15px;
+        letter-spacing: -0.015em;
+    }
+
+    &--error{
+        background-color: #f2dede;
+    }
+}
+
+.notice.tpba-notice{
+    padding:10px;
+    font-size:15px;
+    a.button{
+        margin-right: 11px;
+    }
+    p{
+        font-size: inherit;
+    }
+}
+
+.tpba_progress_wrapper{
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 5px;
+}
+
+.activity-list{
+    thead{
+        h2{
+            float: left;
+        }
+        .button{
+            float: right;
+            height: 37px;
+            font-size: 14px;
+            margin-top: 14px;
+            color: #0970ce;
+            span{
+                position: relative;
+                top: 3px;
+                font-size: 20px;
+                color: #2c77bb;
+            }
+        }
+    }
+    tbody{
+        td{
+            .dashicons{
+                color: #5b9dd9;
+                margin-right: 5px;
+                font-size: 17px;
+                &.dashicons-external{
+                    font-size: 22px;
+                    position: relative;
+                    top: -2px;
+                }
+            }
+
+        }
+        .item-backup{
+            &.item-error{
+                .dashicons{
+                    color: #e05b5b;
+                }
+            }
+        }
+        .item-restore{
+            .dashicons{
+                color:green;
+            }
+        }
+    }
+}
+
+
+.mb-0{
+    margin-bottom: 0;
+}
+
+.mt-3{
+    margin-top: 30px;
+}
+
+@media(max-width:900px){
+    .tpba-install{
+        background-image: none;
+    }
+    .tp_installer__steps{
+        max-width: 100%;
+    }
+    .tpba-install .tpba_panel__header{
+
+    }
+}
+
+@media(max-width:550px){
+
+    .tpba-install .tpba_panel__header{
+
+        padding-right: 80px;
+        font-size: 15px;
+        h3{
+            margin-top:0;
+            font-size: 16px;
+            margin-top: 13px;
+        }
+
+        p{
+            font-size: 14px;
+            line-height: 1.2em;
+            margin-top: 5px;
+        }
+    }
+
+    .tp_installer__forms [data-form] input[type="text"],
+    .tp_installer__forms [data-form] input[type="email"]{
+        width: 416px;
+    }
+}
